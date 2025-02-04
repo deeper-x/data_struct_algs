@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # Algorithms and Data Structures in Go
 
 A comprehensive collection of algorithms and data structures implemented in Go (Golang). This repository serves as both a learning resource and a reference implementation for common computer science concepts.
+=======
+[![Go](https://github.com/deeper-x/data_struct_algs/actions/workflows/go.yml/badge.svg)](https://github.com/deeper-x/data_struct_algs/actions/workflows/go.yml)
+>>>>>>> 2f164f89d7a5cf74eb5533b4a52ca828f4f2e808
 
 ## Contents
 
