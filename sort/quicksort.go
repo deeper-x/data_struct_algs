@@ -1,3 +1,11 @@
+package sort
+
+import (
+	"math/rand"
+
+	"github.com/deeper-x/data_struct_algs/constraints"
+)
+
 // quicksort.go
 // description: Implementation of in-place quicksort algorithm
 // details:
@@ -6,14 +14,6 @@
 // average time complexity: O(n log n)
 // space complexity: O(log n)
 // see sort_test.go for a test implementation, test function TestQuickSort.
-
-package sort
-
-import (
-	"math/rand"
-
-	"github.com/deeper-x/data_struct_algs/constraints"
-)
 
 func Quicksort[T constraints.Ordered](arr []T) []T {
 	if len(arr) < 2 {
