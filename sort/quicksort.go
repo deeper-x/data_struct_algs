@@ -10,7 +10,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Partition[T constraints.Ordered](arr []T, low, high int) int {
 	index := low - 1

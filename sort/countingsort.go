@@ -9,13 +9,13 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Count[T constraints.Integer](data []T) []T {
 	if len(data) == 0 {
 		return data
 	}
-	var aMin, aMax = data[0], data[0]
+	aMin, aMax := data[0], data[0]
 	for _, x := range data {
 		if x < aMin {
 			aMin = x

@@ -8,15 +8,16 @@
 package manacher
 
 import (
-	"github.com/TheAlgorithms/Go/math/min"
 	"strings"
+
+	"github.com/deeper-x/data_struct_algs/math/min"
 )
 
 func makeBoundaries(s string) string {
 	var result strings.Builder
 	result.WriteRune('#')
 	for _, ch := range s {
-		if ch != ' ' { //ignore space as palindrome character
+		if ch != ' ' { // ignore space as palindrome character
 			result.WriteRune(ch)
 		}
 		result.WriteRune('#')

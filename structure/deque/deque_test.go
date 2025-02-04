@@ -14,7 +14,7 @@ package deque_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/structure/deque"
+	"github.com/deeper-x/data_struct_algs/structure/deque"
 )
 
 type QueryStructure[T any] struct {
@@ -30,7 +30,6 @@ type TestCaseData[T any] struct {
 }
 
 func TestDeque(t *testing.T) {
-
 	// Test cases with ints as params
 	testCasesInt := []TestCaseData[int]{
 		{

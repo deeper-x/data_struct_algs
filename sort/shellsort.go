@@ -1,6 +1,6 @@
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Shell[T constraints.Ordered](arr []T) []T {
 	for d := int(len(arr) / 2); d > 0; d /= 2 {

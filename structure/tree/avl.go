@@ -7,8 +7,8 @@
 package tree
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/max"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/max"
 )
 
 // Verify Interface Compliance

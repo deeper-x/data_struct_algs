@@ -6,11 +6,10 @@
 
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/min"
+import "github.com/deeper-x/data_struct_algs/math/min"
 
 // EditDistanceRecursive is a naive implementation with exponential time complexity.
 func EditDistanceRecursive(first string, second string, pointerFirst int, pointerSecond int) int {
-
 	if pointerFirst == 0 {
 		return pointerSecond
 	}
@@ -35,7 +34,6 @@ func EditDistanceRecursive(first string, second string, pointerFirst int, pointe
 // of first[0..i-1] and second[0..j-1]. Time complexity is O(m * n) where m and n are lengths of the strings,
 // first and second respectively.
 func EditDistanceDP(first string, second string) int {
-
 	m := len(first)
 	n := len(second)
 

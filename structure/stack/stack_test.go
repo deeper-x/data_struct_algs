@@ -11,9 +11,10 @@ package stack_test
 
 import (
 	"container/list"
-	"github.com/TheAlgorithms/Go/structure/stack"
 	"reflect"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/structure/stack"
 )
 
 // TestStackLinkedList for testing Stack with LinkedList
@@ -37,7 +38,6 @@ func TestStackLinkedList(t *testing.T) {
 		if newStack.IsEmpty() {
 			t.Error("Stack isEmpty is returned true but expected false", newStack.IsEmpty())
 		}
-
 	})
 
 	t.Run("Stack Length", func(t *testing.T) {
@@ -53,7 +53,6 @@ func TestStackLinkedList(t *testing.T) {
 		if pop != 1 {
 			t.Error("Stack Pop should return 1 but is returned", pop)
 		}
-
 	})
 
 	newStack.Push(52)
@@ -70,7 +69,6 @@ func TestStackLinkedList(t *testing.T) {
 func TestStackArray(t *testing.T) {
 	newStack := stack.NewStack[int]()
 	t.Run("Stack With Array", func(t *testing.T) {
-
 		newStack.Push(2)
 		newStack.Push(3)
 
@@ -135,7 +133,6 @@ func TestStackLinkedListWithList(t *testing.T) {
 	}
 
 	t.Run("Stack Push", func(t *testing.T) {
-
 		stackList.Push(2)
 		stackList.Push(3)
 
@@ -153,7 +150,6 @@ func TestStackLinkedListWithList(t *testing.T) {
 	})
 
 	t.Run("Stack Peak", func(t *testing.T) {
-
 		stackList.Push(2)
 		stackList.Push(83)
 		peak, _ := stackList.Peek()

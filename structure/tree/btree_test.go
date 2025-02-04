@@ -1,9 +1,10 @@
 package tree_test
 
 import (
-	bt "github.com/TheAlgorithms/Go/structure/tree"
 	"math/rand"
 	"testing"
+
+	bt "github.com/deeper-x/data_struct_algs/structure/tree"
 )
 
 func TestBTreeIncreasing(t *testing.T) {

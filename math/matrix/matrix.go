@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/TheAlgorithms/Go/constraints"
+	"github.com/deeper-x/data_struct_algs/constraints"
 )
 
 type Matrix[T constraints.Integer] struct {

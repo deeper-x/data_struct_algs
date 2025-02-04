@@ -7,7 +7,7 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestMedian(t *testing.T) {
@@ -16,7 +16,6 @@ func TestMedian(t *testing.T) {
 		testValues []float64
 		answer     float64
 	}{
-
 		{
 			name:       "Series of numbers in ascending order",
 			testValues: []float64{12, 14, 16, 18, 19},
@@ -42,7 +41,6 @@ func TestMedian(t *testing.T) {
 
 	for _, test := range testCases {
 		t.Run(test.name, func(t *testing.T) {
-
 			returnedMedian := math.Median(test.testValues)
 
 			t.Log(test.testValues, " ", returnedMedian)

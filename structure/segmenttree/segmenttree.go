@@ -7,8 +7,8 @@
 package segmenttree
 
 import (
-	"github.com/TheAlgorithms/Go/math/max"
-	"github.com/TheAlgorithms/Go/math/min"
+	"github.com/deeper-x/data_struct_algs/math/max"
+	"github.com/deeper-x/data_struct_algs/math/min"
 )
 
 const emptyLazyNode = 0
@@ -23,21 +23,21 @@ type SegmentTree struct {
 // Propagate propagates the lazy updates to the child nodes
 func (s *SegmentTree) Propagate(node int, leftNode int, rightNode int) {
 	if s.LazyTree[node] != emptyLazyNode {
-		//add lazy node value multiplied by (right-left+1), which represents all interval
-		//this is the same of adding a value on each node
+		// add lazy node value multiplied by (right-left+1), which represents all interval
+		// this is the same of adding a value on each node
 		s.SegmentTree[node] += (rightNode - leftNode + 1) * s.LazyTree[node]
 
 		if leftNode == rightNode {
-			//leaf node
+			// leaf node
 			s.Array[leftNode] += s.LazyTree[node]
 		} else {
-			//propagate lazy node value for children nodes
-			//may propagate multiple times, children nodes should accumulate lazy node value
+			// propagate lazy node value for children nodes
+			// may propagate multiple times, children nodes should accumulate lazy node value
 			s.LazyTree[2*node] += s.LazyTree[node]
 			s.LazyTree[2*node+1] += s.LazyTree[node]
 		}
 
-		//clear lazy node
+		// clear lazy node
 		s.LazyTree[node] = emptyLazyNode
 	}
 }
@@ -46,19 +46,19 @@ func (s *SegmentTree) Propagate(node int, leftNode int, rightNode int) {
 // node, leftNode and rightNode should always start with 1, 0 and len(Array)-1, respectively.
 func (s *SegmentTree) Query(node int, leftNode int, rightNode int, firstIndex int, lastIndex int) int {
 	if (firstIndex > lastIndex) || (leftNode > rightNode) {
-		//outside the interval
+		// outside the interval
 		return 0
 	}
 
-	//propagate lazy tree
+	// propagate lazy tree
 	s.Propagate(node, leftNode, rightNode)
 
 	if (leftNode >= firstIndex) && (rightNode <= lastIndex) {
-		//inside the interval
+		// inside the interval
 		return s.SegmentTree[node]
 	}
 
-	//get sum of left and right nodes
+	// get sum of left and right nodes
 	mid := (leftNode + rightNode) / 2
 
 	leftNodeSum := s.Query(2*node, leftNode, mid, firstIndex, min.Int(mid, lastIndex))
@@ -71,21 +71,21 @@ func (s *SegmentTree) Query(node int, leftNode int, rightNode int, firstIndex in
 // with the new value provided and recomputes the sum of different ranges.
 // node, leftNode and rightNode should always start with 1, 0 and len(Array)-1, respectively.
 func (s *SegmentTree) Update(node int, leftNode int, rightNode int, firstIndex int, lastIndex int, value int) {
-	//propagate lazy tree
+	// propagate lazy tree
 	s.Propagate(node, leftNode, rightNode)
 
 	if (firstIndex > lastIndex) || (leftNode > rightNode) {
-		//outside the interval
+		// outside the interval
 		return
 	}
 
 	if (leftNode >= firstIndex) && (rightNode <= lastIndex) {
-		//inside the interval
-		//accumulate the lazy node value
+		// inside the interval
+		// accumulate the lazy node value
 		s.LazyTree[node] += value
 		s.Propagate(node, leftNode, rightNode)
 	} else {
-		//update left and right nodes
+		// update left and right nodes
 		mid := (leftNode + rightNode) / 2
 
 		s.Update(2*node, leftNode, mid, firstIndex, min.Int(mid, lastIndex), value)
@@ -99,10 +99,10 @@ func (s *SegmentTree) Update(node int, leftNode int, rightNode int, firstIndex i
 // node, leftNode and rightNode should always start with 1, 0 and len(Array)-1, respectively.
 func (s *SegmentTree) Build(node int, left int, right int) {
 	if left == right {
-		//leaf node
+		// leaf node
 		s.SegmentTree[node] = s.Array[left]
 	} else {
-		//get sum of left and right nodes
+		// get sum of left and right nodes
 		mid := (left + right) / 2
 
 		s.Build(2*node, left, mid)
@@ -126,11 +126,11 @@ func NewSegmentTree(Array []int) *SegmentTree {
 	}
 
 	for i := range segTree.LazyTree {
-		//fill LazyTree with empty lazy nodes
+		// fill LazyTree with empty lazy nodes
 		segTree.LazyTree[i] = emptyLazyNode
 	}
 
-	//starts with node 1 and interval [0, len(arr)-1] inclusive
+	// starts with node 1 and interval [0, len(arr)-1] inclusive
 	segTree.Build(1, 0, len(Array)-1)
 
 	return &segTree

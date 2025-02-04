@@ -3,7 +3,7 @@ package cache_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/cache"
+	"github.com/deeper-x/data_struct_algs/cache"
 )
 
 func TestLFU(t *testing.T) {
@@ -53,6 +53,5 @@ func TestLFU(t *testing.T) {
 		if got != expected {
 			t.Errorf("expected: %v, got: %v", expected, got)
 		}
-
 	})
 }

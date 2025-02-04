@@ -6,7 +6,7 @@
 
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/max"
+import "github.com/deeper-x/data_struct_algs/math/max"
 
 // MaxSubArraySum returns the sum of the maximum subarray in the input array
 func MaxSubArraySum(nums []int) int {

@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/compression"
+	"github.com/deeper-x/data_struct_algs/compression"
 )
 
 // SymbolCountOrd computes sorted symbol-frequency list of input message
@@ -48,7 +48,6 @@ func TestHuffman(t *testing.T) {
 			messageHuffDecoded := compression.HuffDecode(tree, tree, messageCoded, "")
 			if messageHuffDecoded != message {
 				t.Errorf("got: %q\nbut expected: %q", messageHuffDecoded, message)
-
 			}
 		})
 	}

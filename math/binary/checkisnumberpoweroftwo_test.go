@@ -6,9 +6,10 @@
 package binary
 
 import (
-	math2 "github.com/TheAlgorithms/Go/math"
 	"math"
 	"testing"
+
+	math2 "github.com/deeper-x/data_struct_algs/math"
 )
 
 func getTestsForPowerOfTwo() []struct {
@@ -16,7 +17,7 @@ func getTestsForPowerOfTwo() []struct {
 	a       int
 	missing bool
 } {
-	var tests = []struct {
+	tests := []struct {
 		name    string
 		a       int
 		missing bool

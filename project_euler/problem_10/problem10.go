@@ -9,7 +9,7 @@
  */
 package problem10
 
-import "github.com/TheAlgorithms/Go/math/prime"
+import "github.com/deeper-x/data_struct_algs/math/prime"
 
 func Problem10(n int) uint {
 	sum := uint(0)

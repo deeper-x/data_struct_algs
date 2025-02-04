@@ -3,7 +3,7 @@ package matrix_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestIsValid(t *testing.T) {
@@ -39,7 +39,6 @@ func TestIsValid(t *testing.T) {
 	if result3 {
 		t.Errorf("IsValid(invalidMatrix) returned true, expected false (invalid matrix with inconsistent row lengths)")
 	}
-
 }
 
 func BenchmarkIsValid(b *testing.B) {

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/compression"
+	"github.com/deeper-x/data_struct_algs/compression"
 )
 
 func TestCompressionRLEncode(t *testing.T) {

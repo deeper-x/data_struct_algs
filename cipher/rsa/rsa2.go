@@ -14,10 +14,10 @@ import (
 	"math/big"
 	"math/rand"
 
-	"github.com/TheAlgorithms/Go/math/gcd"
-	"github.com/TheAlgorithms/Go/math/lcm"
-	"github.com/TheAlgorithms/Go/math/modular"
-	"github.com/TheAlgorithms/Go/math/prime"
+	"github.com/deeper-x/data_struct_algs/math/gcd"
+	"github.com/deeper-x/data_struct_algs/math/lcm"
+	"github.com/deeper-x/data_struct_algs/math/modular"
+	"github.com/deeper-x/data_struct_algs/math/prime"
 )
 
 // rsa struct contains the public key, private key and modulus

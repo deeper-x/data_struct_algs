@@ -2,7 +2,8 @@ package heap
 
 import (
 	"errors"
-	"github.com/TheAlgorithms/Go/constraints"
+
+	"github.com/deeper-x/data_struct_algs/constraints"
 )
 
 // Heap heap implementation using generic.

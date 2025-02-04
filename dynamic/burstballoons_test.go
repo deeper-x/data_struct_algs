@@ -3,7 +3,7 @@ package dynamic_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/dynamic"
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 type testCaseBurstBalloons struct {
@@ -18,7 +18,6 @@ func getBurstBalloonsTestCases() []testCaseBurstBalloons {
 		{[]int{1}, 1},            // Single balloon
 		{[]int{}, 0},             // No balloons
 	}
-
 }
 
 func TestMaxCoins(t *testing.T) {

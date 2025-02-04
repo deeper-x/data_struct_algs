@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/prime"
+	"github.com/deeper-x/data_struct_algs/math/prime"
 )
 
 func TestSieveEratosthenes(t *testing.T) {

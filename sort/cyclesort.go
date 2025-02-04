@@ -1,7 +1,7 @@
 package sort
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
+	"github.com/deeper-x/data_struct_algs/constraints"
 )
 
 // Cycle sort is an in-place, unstable sorting algorithm that is particularly useful
@@ -35,7 +35,7 @@ func Cycle[T constraints.Number](arr []T) []T {
 		// Now let us put the item to it's right position
 		arr[pos], elem = elem, arr[pos]
 
-		//We need to rotate the array till we have reached the start of the cycle again
+		// We need to rotate the array till we have reached the start of the cycle again
 		for pos != cycle {
 			pos = cycle
 			// Find smaller elements to right again
@@ -47,7 +47,7 @@ func Cycle[T constraints.Number](arr []T) []T {
 			for elem == arr[pos] {
 				pos++
 			}
-			//We can do this unconditionally, but the check helps prevent redundant writes to the array
+			// We can do this unconditionally, but the check helps prevent redundant writes to the array
 			if elem != arr[pos] {
 				arr[pos], elem = elem, arr[pos]
 			}

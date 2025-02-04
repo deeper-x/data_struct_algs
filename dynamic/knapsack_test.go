@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/dynamic"
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 func TestKnapsack(t *testing.T) {
@@ -34,5 +34,5 @@ func TestKnapsack(t *testing.T) {
 
 func ExampleKnapsack() {
 	fmt.Print(dynamic.Knapsack(10, []int{4, 5, 8}, []int{50, 15, 60}))
-	//Output:65
+	// Output:65
 }

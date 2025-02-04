@@ -6,10 +6,10 @@
 package sort
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-
-	// math imported for floor division
 	"math"
+
+	"github.com/deeper-x/data_struct_algs/constraints"
+	// math imported for floor division
 )
 
 func innerStooge[T constraints.Ordered](arr []T, i int32, j int32) []T {

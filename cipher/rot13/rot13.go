@@ -7,7 +7,7 @@
 package rot13
 
 import (
-	"github.com/TheAlgorithms/Go/cipher/caesar"
+	"github.com/deeper-x/data_struct_algs/cipher/caesar"
 )
 
 // rot13 is a special case, which is fixed the shift of 13, of the Caesar cipher

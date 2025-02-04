@@ -9,13 +9,13 @@
 package sort
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/max"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/max"
 )
 
 func countSort[T constraints.Integer](arr []T, exp T) []T {
 	var digits [10]int
-	var output = make([]T, len(arr))
+	output := make([]T, len(arr))
 
 	for _, item := range arr {
 		digits[(item/exp)%10]++

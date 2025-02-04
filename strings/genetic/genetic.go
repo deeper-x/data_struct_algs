@@ -67,7 +67,7 @@ type Result struct {
 // then default values would be set.
 //
 // Link to the same algorithm implemented in python:
-// https://github.com/TheAlgorithms/Python/blob/master/genetic_algorithm/basic_string.py
+// https://github.com/deeper-x/data_struct_algs/Python/blob/master/genetic_algorithm/basic_string.py
 func GeneticString(target string, charmap []rune, conf *Conf) (*Result, error) {
 	populationNum := conf.PopulationNum
 	if populationNum == 0 {

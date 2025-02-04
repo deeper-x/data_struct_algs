@@ -3,7 +3,7 @@ package rsa_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/cipher/rsa"
+	"github.com/deeper-x/data_struct_algs/cipher/rsa"
 )
 
 func TestRSA(t *testing.T) {

@@ -8,11 +8,11 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestLiouvilleLambda(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		name          string
 		n             int
 		expectedValue int
@@ -32,6 +32,7 @@ func TestLiouvilleLambda(t *testing.T) {
 		})
 	}
 }
+
 func BenchmarkLiouvilleLambda(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_, _ = math.LiouvilleLambda(65536)

@@ -1,9 +1,10 @@
 package math
 
 import (
-	"github.com/TheAlgorithms/Go/math/binary"
 	"math"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/math/binary"
 )
 
 func TestAbs(t *testing.T) {
@@ -42,6 +43,7 @@ func BenchmarkSimpleAbs(b *testing.B) {
 		Abs(-1024)
 	}
 }
+
 func BenchmarkBinaryAbs32(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		binary.Abs(32, -1024)

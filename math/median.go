@@ -7,12 +7,11 @@
 package math
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/sort"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/sort"
 )
 
 func Median[T constraints.Number](values []T) float64 {
-
 	sort.Bubble(values)
 
 	l := len(values)

@@ -1,6 +1,6 @@
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/max"
+import "github.com/deeper-x/data_struct_algs/math/max"
 
 // MaxCoins returns the maximum coins we can collect by bursting the balloons
 func MaxCoins(nums []int) int {

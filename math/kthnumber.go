@@ -1,8 +1,8 @@
 package math
 
 import (
-	"github.com/TheAlgorithms/Go/search"
-	"github.com/TheAlgorithms/Go/sort"
+	"github.com/deeper-x/data_struct_algs/search"
+	"github.com/deeper-x/data_struct_algs/sort"
 )
 
 // FindKthMax returns the kth large element given an integer slice

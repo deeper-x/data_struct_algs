@@ -1,6 +1,6 @@
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/min"
+import "github.com/deeper-x/data_struct_algs/math/min"
 
 // OptimalBST returns the minimum cost of constructing a Binary Search Tree
 func OptimalBST(keys []int, freq []int, n int) int {

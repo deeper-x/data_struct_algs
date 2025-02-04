@@ -2,10 +2,11 @@ package tree_test
 
 import (
 	"fmt"
-	"github.com/TheAlgorithms/Go/constraints"
 	"testing"
 
-	bt "github.com/TheAlgorithms/Go/structure/tree"
+	"github.com/deeper-x/data_struct_algs/constraints"
+
+	bt "github.com/deeper-x/data_struct_algs/structure/tree"
 )
 
 type TestTree[T constraints.Ordered] interface {

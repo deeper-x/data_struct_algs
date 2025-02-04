@@ -11,7 +11,7 @@
  */
 package problem7
 
-import "github.com/TheAlgorithms/Go/math/prime"
+import "github.com/deeper-x/data_struct_algs/math/prime"
 
 func Problem7(n uint) int64 {
 	count, i := uint(0), int64(1)

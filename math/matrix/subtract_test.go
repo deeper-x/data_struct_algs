@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestSubtract(t *testing.T) {
@@ -33,7 +33,6 @@ func TestSubtract(t *testing.T) {
 	if err2 == nil || err2.Error() != expectedError2.Error() {
 		t.Errorf("m3.Subtract(m4) returned error: %v, expected error: %v", err2, expectedError2)
 	}
-
 }
 
 // BenchmarkSubtract benchmarks the Subtract function.

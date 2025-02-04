@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/cipher/dsa"
+	"github.com/deeper-x/data_struct_algs/cipher/dsa"
 )
 
 func TestDSA(t *testing.T) {
@@ -35,7 +35,6 @@ func TestDSA(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-
 			// Sign the message
 			r, s := dsa.Sign(
 				[]byte(tt.message),

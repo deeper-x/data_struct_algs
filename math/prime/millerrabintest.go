@@ -13,7 +13,7 @@ package prime
 import (
 	"math/rand"
 
-	"github.com/TheAlgorithms/Go/math/modular"
+	"github.com/deeper-x/data_struct_algs/math/modular"
 )
 
 // formatNum accepts a number and returns the
@@ -50,7 +50,6 @@ func isTrivial(num int64) (prime bool, trivial bool) {
 func MillerTest(num, witness int64) (bool, error) {
 	d, _ := formatNum(num)
 	res, err := modular.Exponentiation(witness, d, num)
-
 	if err != nil {
 		return false, err
 	}

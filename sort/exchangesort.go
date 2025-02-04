@@ -6,7 +6,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Exchange[T constraints.Ordered](arr []T) []T {
 	for i := 0; i < len(arr)-1; i++ {

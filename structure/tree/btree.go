@@ -3,7 +3,7 @@
 
 package tree
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 type BTreeNode[T constraints.Ordered] struct {
 	keys     []T

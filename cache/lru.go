@@ -8,7 +8,7 @@
 package cache
 
 import (
-	"github.com/TheAlgorithms/Go/structure/linkedlist"
+	"github.com/deeper-x/data_struct_algs/structure/linkedlist"
 )
 
 type item struct {

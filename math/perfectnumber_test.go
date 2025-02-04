@@ -3,7 +3,7 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 type testCaseSumOfProperDivisors struct {

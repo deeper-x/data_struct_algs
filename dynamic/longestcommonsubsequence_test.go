@@ -3,7 +3,7 @@ package dynamic_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/dynamic"
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 type testCaseLCS struct {

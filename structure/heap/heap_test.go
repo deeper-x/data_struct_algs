@@ -1,9 +1,10 @@
 package heap_test
 
 import (
-	"github.com/TheAlgorithms/Go/structure/heap"
 	"reflect"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/structure/heap"
 )
 
 type testInt int

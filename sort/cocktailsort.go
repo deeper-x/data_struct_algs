@@ -3,7 +3,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 // Cocktail sort is a variation of bubble sort, operating in two directions (beginning to end, end to beginning)
 func Cocktail[T constraints.Ordered](arr []T) []T {

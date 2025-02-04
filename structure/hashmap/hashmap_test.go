@@ -3,7 +3,7 @@ package hashmap_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/structure/hashmap"
+	"github.com/deeper-x/data_struct_algs/structure/hashmap"
 )
 
 func TestHashMap(t *testing.T) {

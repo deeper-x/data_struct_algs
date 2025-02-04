@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/dynamic"
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 func TestTrapRainWater(t *testing.T) {

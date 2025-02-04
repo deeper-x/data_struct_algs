@@ -8,8 +8,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 type testCase[T constraints.Number] struct {
@@ -34,6 +34,7 @@ func testModeFramework[T constraints.Number](t *testing.T, testCases []testCase[
 		})
 	}
 }
+
 func TestMode(t *testing.T) {
 	// test cases for integer values
 	intTestCases := []testCase[int]{

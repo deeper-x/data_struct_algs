@@ -3,7 +3,7 @@ package matrix_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestMultiplyMatrix(t *testing.T) {
@@ -19,7 +19,6 @@ func TestMultiplyMatrix(t *testing.T) {
 		} else if !result.CheckEqual(expected) {
 			t.Errorf("Result matrix does not match the expected result.")
 		}
-
 	})
 	// Test case with compatible matrices
 	t.Run("Compatible Matrices", func(t *testing.T) {
@@ -44,9 +43,7 @@ func TestMultiplyMatrix(t *testing.T) {
 		} else if !result.CheckEqual(expected) {
 			t.Errorf("Result matrix does not match the expected result.")
 		}
-
 	})
-
 }
 
 func TestMultiplyIncompatibleMatrix(t *testing.T) {

@@ -8,11 +8,11 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestCombinations(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		name          string
 		n             int
 		k             int
@@ -35,6 +35,7 @@ func TestCombinations(t *testing.T) {
 		})
 	}
 }
+
 func BenchmarkCombinations(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_, _ = math.Combinations(65536, 65536)

@@ -1,8 +1,8 @@
 package dynamic
 
 import (
-	"github.com/TheAlgorithms/Go/math/max"
-	"github.com/TheAlgorithms/Go/math/min"
+	"github.com/deeper-x/data_struct_algs/math/max"
+	"github.com/deeper-x/data_struct_algs/math/min"
 )
 
 // EggDropping finds the minimum number of attempts needed to find the critical floor

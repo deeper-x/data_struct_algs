@@ -13,7 +13,7 @@ package problem4
 import (
 	"fmt"
 
-	"github.com/TheAlgorithms/Go/strings/palindrome"
+	"github.com/deeper-x/data_struct_algs/strings/palindrome"
 )
 
 func Problem4() uint {

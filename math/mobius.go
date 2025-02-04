@@ -15,7 +15,7 @@
 package math
 
 import (
-	"github.com/TheAlgorithms/Go/math/prime"
+	"github.com/deeper-x/data_struct_algs/math/prime"
 )
 
 // Mu is the Mobius function

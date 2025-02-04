@@ -8,11 +8,11 @@ package math_test
 import (
 	"testing"
 
-	algmath "github.com/TheAlgorithms/Go/math"
+	algmath "github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestMu(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		n        int
 		expected int
 	}{
@@ -34,6 +34,7 @@ func TestMu(t *testing.T) {
 		}
 	}
 }
+
 func BenchmarkMu(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		algmath.Mu(65536)

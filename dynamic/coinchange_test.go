@@ -2,8 +2,9 @@ package dynamic_test
 
 import (
 	"fmt"
-	"github.com/TheAlgorithms/Go/dynamic"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 func TestCoinChange(t *testing.T) {
@@ -27,5 +28,4 @@ func TestCoinChange(t *testing.T) {
 			}
 		})
 	}
-
 }

@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/strings"
+	"github.com/deeper-x/data_struct_algs/strings"
 )
 
 func TestIsSubsequence(t *testing.T) {
-	var testCases = []struct {
+	testCases := []struct {
 		name     string
 		s        string
 		t        string

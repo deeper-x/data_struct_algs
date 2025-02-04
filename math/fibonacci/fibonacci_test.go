@@ -1,8 +1,9 @@
 package fibonacci
 
 import (
-	"github.com/TheAlgorithms/Go/dynamic"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/dynamic"
 )
 
 func getTests() []struct {

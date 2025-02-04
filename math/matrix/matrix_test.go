@@ -4,11 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestNewMatrix(t *testing.T) {
-
 	nullMatrix := matrix.New(0, 0, 0)
 	if nullMatrix.Rows() != 0 || nullMatrix.Columns() != 0 {
 		t.Errorf("matrix.New( 0, 0, 0) returned nil, expected a matrix")
@@ -18,7 +17,6 @@ func TestNewMatrix(t *testing.T) {
 	if intMatrix.Rows() != 3 || intMatrix.Columns() != 4 {
 		t.Errorf("matrix.New( 3, 4, 0) returned nil, expected a matrix")
 	}
-
 }
 
 func TestNewFromElements(t *testing.T) {

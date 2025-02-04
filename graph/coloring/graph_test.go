@@ -4,9 +4,10 @@
 package coloring_test
 
 import (
-	"github.com/TheAlgorithms/Go/graph/coloring"
 	"strconv"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/graph/coloring"
 )
 
 type testGraph struct {

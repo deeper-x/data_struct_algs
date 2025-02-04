@@ -6,7 +6,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Insertion[T constraints.Ordered](arr []T) []T {
 	for currentIndex := 1; currentIndex < len(arr); currentIndex++ {

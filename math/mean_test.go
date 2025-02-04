@@ -1,8 +1,9 @@
 package math_test
 
 import (
-	"github.com/TheAlgorithms/Go/math"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestMean(t *testing.T) {
@@ -45,8 +46,6 @@ func TestMean(t *testing.T) {
 				t.Errorf("\nFailed test: %s\ntestValues: %v\naverage: %v\nbut received: %v\n",
 					test.name, test.testValues, test.average, returnedAverage)
 			}
-
 		})
 	}
-
 }

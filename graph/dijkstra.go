@@ -7,7 +7,7 @@
 
 package graph
 
-import "github.com/TheAlgorithms/Go/sort"
+import "github.com/deeper-x/data_struct_algs/sort"
 
 type Item struct {
 	node int
@@ -18,6 +18,7 @@ func (a Item) More(b any) bool {
 	// reverse direction for minheap
 	return a.dist < b.(Item).dist
 }
+
 func (a Item) Idx() int {
 	return a.node
 }

@@ -3,7 +3,7 @@ package matrix_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestMatrixCopy(t *testing.T) {
@@ -39,7 +39,6 @@ func TestMatrixCopy(t *testing.T) {
 			}
 		}
 	}
-
 }
 
 func TestMatrixCopyEmpty(t *testing.T) {

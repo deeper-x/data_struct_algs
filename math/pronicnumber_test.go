@@ -7,11 +7,11 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestPronicNumber(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		name          string
 		n             int
 		expectedValue bool
@@ -431,6 +431,7 @@ func TestPronicNumber(t *testing.T) {
 		})
 	}
 }
+
 func BenchmarkPronicNumber(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		math.PronicNumber(65536)

@@ -8,9 +8,9 @@ package rsa
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/gcd"
-	"github.com/TheAlgorithms/Go/math/lcm"
-	"github.com/TheAlgorithms/Go/math/modular"
+	"github.com/deeper-x/data_struct_algs/math/gcd"
+	"github.com/deeper-x/data_struct_algs/math/lcm"
+	"github.com/deeper-x/data_struct_algs/math/modular"
 )
 
 var rsaTestData = []struct {

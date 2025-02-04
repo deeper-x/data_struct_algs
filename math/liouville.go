@@ -16,7 +16,7 @@ package math
 import (
 	"errors"
 
-	"github.com/TheAlgorithms/Go/math/prime"
+	"github.com/deeper-x/data_struct_algs/math/prime"
 )
 
 var ErrNonZeroArgsOnly error = errors.New("arguments cannot be zero")

@@ -6,9 +6,9 @@
 package sort
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/max"
-	"github.com/TheAlgorithms/Go/math/min"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/max"
+	"github.com/deeper-x/data_struct_algs/math/min"
 )
 
 // Pigeonhole sorts a slice using pigeonhole sorting algorithm.

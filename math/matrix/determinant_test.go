@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 // Test different matrix contents
@@ -42,19 +42,16 @@ func TestMatrixDeterminant(t *testing.T) {
 	if determinant != expectedValue {
 		t.Fatalf("Determinant returned for a 1 by 1 matrix was %d; wanted %d", determinant, expectedValue)
 	}
-
 }
 
 func TestEmptyMatrix(t *testing.T) {
 	emptyElements := [][]int{}
 	matrix, err := matrix.NewFromElements(emptyElements)
-
 	if err != nil {
 		t.Fatalf("Error creating Matrix with empty elements: %v", err)
 	}
 
 	determinant, err := matrix.Determinant()
-
 	if err != nil {
 		t.Fatalf("Determinant returned an error for empty matrix: %v", err)
 	}
@@ -64,7 +61,6 @@ func TestEmptyMatrix(t *testing.T) {
 	if determinant != expectedValue {
 		t.Errorf("Determinant returned from empty matrix was %d; wanted %d", determinant, expectedValue)
 	}
-
 }
 
 func TestNonSquareMatrix(t *testing.T) {
@@ -92,7 +88,6 @@ func TestNonSquareMatrix(t *testing.T) {
 	if determinant != 0 {
 		t.Errorf("Determinant of non-square matrix was not 0 but was %d", determinant)
 	}
-
 }
 
 // Test matrix returned from matrix.New
@@ -103,7 +98,6 @@ func TestDefaultMatrix(t *testing.T) {
 	defaultMatrix := matrix.New(initialRows, initialCols, initialValue)
 
 	determinant, err := defaultMatrix.Determinant()
-
 	if err != nil {
 		t.Fatalf("Error finding the determinant of 3 by 3 default matrix: %v.", err)
 	}

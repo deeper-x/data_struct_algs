@@ -10,7 +10,7 @@ package sort
 import (
 	"math/rand"
 
-	"github.com/TheAlgorithms/Go/constraints"
+	"github.com/deeper-x/data_struct_algs/constraints"
 )
 
 func isSorted[T constraints.Number](arr []T) bool {

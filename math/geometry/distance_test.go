@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	geometry "github.com/TheAlgorithms/Go/math/geometry"
+	geometry "github.com/deeper-x/data_struct_algs/math/geometry"
 )
 
 type args struct {

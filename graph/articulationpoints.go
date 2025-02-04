@@ -1,7 +1,7 @@
 // Package graph provides algorithms to analyze graph structures.
 package graph
 
-import "github.com/TheAlgorithms/Go/math/min"
+import "github.com/deeper-x/data_struct_algs/math/min"
 
 // apHelper stores auxiliary data used to identify articulation points in a graph.
 type apHelper struct {

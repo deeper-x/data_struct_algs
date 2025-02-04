@@ -10,7 +10,7 @@ package math
 import (
 	"errors"
 
-	"github.com/TheAlgorithms/Go/constraints"
+	"github.com/deeper-x/data_struct_algs/constraints"
 )
 
 // ErrEmptySlice is the error returned by functions in math package when
@@ -19,7 +19,6 @@ import (
 var ErrEmptySlice = errors.New("empty slice provided")
 
 func Mode[T constraints.Number](numbers []T) (T, error) {
-
 	countMap := make(map[T]int)
 
 	n := len(numbers)
@@ -43,5 +42,4 @@ func Mode[T constraints.Number](numbers []T) (T, error) {
 	}
 
 	return mode, nil
-
 }

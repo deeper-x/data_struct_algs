@@ -6,7 +6,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func getNextGap(gap int) int {
 	gap = (gap * 10) / 13

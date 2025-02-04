@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestMatrixString(t *testing.T) {
@@ -50,7 +50,6 @@ func TestMatrixString(t *testing.T) {
 }
 
 func TestNullMatrixString(t *testing.T) {
-
 	m1 := matrix.New(0, 0, 0)
 	// Redirect stdout to capture Stringed output
 	old := os.Stdout

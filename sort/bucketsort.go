@@ -1,6 +1,6 @@
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 // Bucket sorts a slice. It is mainly useful
 // when input is uniformly distributed over a range.

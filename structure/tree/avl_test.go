@@ -1,11 +1,12 @@
 package tree_test
 
 import (
-	bt "github.com/TheAlgorithms/Go/structure/tree"
 	"math/rand"
 	"sort"
 	"testing"
 	"time"
+
+	bt "github.com/deeper-x/data_struct_algs/structure/tree"
 )
 
 func TestAVLPush(t *testing.T) {
@@ -202,7 +203,6 @@ func TestAVLDelete(t *testing.T) {
 		if root.Right().(*bt.AVLNode[int]).Height() != 1 {
 			t.Errorf("Height of Right should be 1")
 		}
-
 	})
 
 	t.Run("RRRotation-Test", func(t *testing.T) {
@@ -243,7 +243,6 @@ func TestAVLDelete(t *testing.T) {
 		if root.Right().(*bt.AVLNode[int]).Height() != 1 {
 			t.Errorf("Height of Right should be 1")
 		}
-
 	})
 
 	t.Run("RLRotation-Test", func(t *testing.T) {
@@ -278,7 +277,6 @@ func TestAVLDelete(t *testing.T) {
 		if root.Right().(*bt.AVLNode[int]).Height() != 1 {
 			t.Errorf("Height of Right should be 1")
 		}
-
 	})
 
 	t.Run("Random Test", func(t *testing.T) {

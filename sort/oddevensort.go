@@ -4,7 +4,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 // OddEvenSort performs the odd-even sort algorithm on the given array.
 // It is a variation of bubble sort that compares adjacent pairs, alternating

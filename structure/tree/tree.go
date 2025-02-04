@@ -8,8 +8,8 @@
 package tree
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/max"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/max"
 )
 
 type Node[T constraints.Ordered] interface {
@@ -27,7 +27,7 @@ func accessNodeByLayerHelper[T constraints.Ordered](root, nilNode Node[T]) [][]T
 	}
 	var q []Node[T]
 	var n Node[T]
-	var idx = 0
+	idx := 0
 	q = append(q, root)
 	var res [][]T
 
@@ -90,7 +90,6 @@ func preOrderRecursive[T constraints.Ordered](n, nilNode Node[T], traversal *[]T
 	*traversal = append(*traversal, n.Key())
 	preOrderRecursive(n.Left(), nilNode, traversal)
 	preOrderRecursive(n.Right(), nilNode, traversal)
-
 }
 
 func postOrderRecursive[T constraints.Ordered](n, nilNode Node[T], traversal *[]T) {

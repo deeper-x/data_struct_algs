@@ -8,11 +8,11 @@ package math_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math"
+	"github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestAliquotSum(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		name          string
 		n             int
 		expectedValue int
@@ -33,6 +33,7 @@ func TestAliquotSum(t *testing.T) {
 		})
 	}
 }
+
 func BenchmarkAliquotSum(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_, _ = math.AliquotSum(65536)

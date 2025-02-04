@@ -6,7 +6,7 @@
 
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/min"
+import "github.com/deeper-x/data_struct_algs/math/min"
 
 // MatrixChainRec function
 func MatrixChainRec(D []int, i, j int) int {

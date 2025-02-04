@@ -1,3 +1,3 @@
-module github.com/TheAlgorithms/Go
+module github.com/deeper-x/data_struct_algs
 
-go 1.19
+go 1.23.3

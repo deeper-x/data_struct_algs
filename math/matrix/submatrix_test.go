@@ -3,7 +3,7 @@ package matrix_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestMatrixSubMatrix(t *testing.T) {

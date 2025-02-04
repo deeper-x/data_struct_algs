@@ -13,7 +13,7 @@
 package problem15
 
 import (
-	"github.com/TheAlgorithms/Go/math/factorial"
+	"github.com/deeper-x/data_struct_algs/math/factorial"
 )
 
 func Problem15(gridSize int) int {

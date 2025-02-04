@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestStrassenMatrixMultiply(t *testing.T) {
@@ -65,6 +65,7 @@ func TestStrassenMatrixMultiply(t *testing.T) {
 		}
 	}
 }
+
 func TestMatrixMultiplication(t *testing.T) {
 	rand.New(rand.NewSource(time.Now().UnixNano()))
 

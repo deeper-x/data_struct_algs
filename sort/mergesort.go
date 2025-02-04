@@ -7,19 +7,18 @@
 package sort
 
 import (
-	"github.com/TheAlgorithms/Go/constraints"
-	"github.com/TheAlgorithms/Go/math/min"
 	"sync"
+
+	"github.com/deeper-x/data_struct_algs/constraints"
+	"github.com/deeper-x/data_struct_algs/math/min"
 )
 
 func merge[T constraints.Ordered](a []T, b []T) []T {
-
-	var r = make([]T, len(a)+len(b))
-	var i = 0
-	var j = 0
+	r := make([]T, len(a)+len(b))
+	i := 0
+	j := 0
 
 	for i < len(a) && j < len(b) {
-
 		if a[i] <= b[j] {
 			r[i+j] = a[i]
 			i++
@@ -27,7 +26,6 @@ func merge[T constraints.Ordered](a []T, b []T) []T {
 			r[i+j] = b[j]
 			j++
 		}
-
 	}
 
 	for i < len(a) {
@@ -40,22 +38,18 @@ func merge[T constraints.Ordered](a []T, b []T) []T {
 	}
 
 	return r
-
 }
 
 // Merge Perform merge sort on a slice
 func Merge[T constraints.Ordered](items []T) []T {
-
 	if len(items) < 2 {
 		return items
-
 	}
 
-	var middle = len(items) / 2
-	var a = Merge(items[:middle])
-	var b = Merge(items[middle:])
+	middle := len(items) / 2
+	a := Merge(items[:middle])
+	b := Merge(items[middle:])
 	return merge(a, b)
-
 }
 
 func MergeIter[T constraints.Ordered](items []T) []T {
@@ -81,13 +75,13 @@ func ParallelMerge[T constraints.Ordered](items []T) []T {
 	var wg sync.WaitGroup
 	wg.Add(1)
 
-	var middle = len(items) / 2
+	middle := len(items) / 2
 	var a []T
 	go func() {
 		defer wg.Done()
 		a = ParallelMerge(items[:middle])
 	}()
-	var b = ParallelMerge(items[middle:])
+	b := ParallelMerge(items[middle:])
 
 	wg.Wait()
 	return merge(a, b)

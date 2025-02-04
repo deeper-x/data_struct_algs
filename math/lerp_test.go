@@ -3,7 +3,7 @@ package math_test
 import (
 	"testing"
 
-	algmath "github.com/TheAlgorithms/Go/math"
+	algmath "github.com/deeper-x/data_struct_algs/math"
 )
 
 func TestLerp(t *testing.T) {

@@ -1,13 +1,14 @@
 package strings_test
 
 import (
-	"github.com/TheAlgorithms/Go/strings"
 	"reflect"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/strings"
 )
 
 func TestCountChars(t *testing.T) {
-	var testCases = []struct {
+	testCases := []struct {
 		name     string
 		input    string
 		expected map[rune]int

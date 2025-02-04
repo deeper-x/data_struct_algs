@@ -1,8 +1,9 @@
 package fenwicktree_test
 
 import (
-	"github.com/TheAlgorithms/Go/structure/fenwicktree"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/structure/fenwicktree"
 )
 
 type query struct {
@@ -17,7 +18,7 @@ type update struct {
 }
 
 func TestFenwickTree(t *testing.T) {
-	var fenwickTreeTestData = []struct {
+	fenwickTreeTestData := []struct {
 		description string
 		array       []int
 		updates     []update
@@ -77,5 +78,4 @@ func TestFenwickTree(t *testing.T) {
 			}
 		})
 	}
-
 }

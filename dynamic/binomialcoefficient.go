@@ -5,7 +5,7 @@
 // space complexity: O(n*k) where n is the number of elements and k is the number of elements to choose
 package dynamic
 
-import "github.com/TheAlgorithms/Go/math/min"
+import "github.com/deeper-x/data_struct_algs/math/min"
 
 // func main() {
 // 	myArrayOfK := [4]int{5, 6, 7, 8}

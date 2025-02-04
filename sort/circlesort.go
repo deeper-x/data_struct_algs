@@ -1,7 +1,7 @@
 // Package sort implements various sorting algorithms.
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 // Circle sorts an array using the circle sort algorithm.
 func Circle[T constraints.Ordered](arr []T) []T {

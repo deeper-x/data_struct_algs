@@ -11,7 +11,7 @@
 
 package sort
 
-import "github.com/TheAlgorithms/Go/constraints"
+import "github.com/deeper-x/data_struct_algs/constraints"
 
 func Patience[T constraints.Ordered](arr []T) []T {
 	if len(arr) <= 1 {

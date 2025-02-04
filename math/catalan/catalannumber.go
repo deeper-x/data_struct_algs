@@ -11,7 +11,7 @@
 package catalan
 
 import (
-	f "github.com/TheAlgorithms/Go/math/factorial"
+	f "github.com/deeper-x/data_struct_algs/math/factorial"
 )
 
 func factorial(n int) int {

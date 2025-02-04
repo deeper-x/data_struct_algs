@@ -8,11 +8,11 @@ package prime_test
 import (
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/prime"
+	"github.com/deeper-x/data_struct_algs/math/prime"
 )
 
 func TestTwin(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		name          string
 		n             int
 		expectedValue int
@@ -32,6 +32,7 @@ func TestTwin(t *testing.T) {
 		})
 	}
 }
+
 func BenchmarkTwin(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_, _ = prime.Twin(65536)

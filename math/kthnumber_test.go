@@ -1,8 +1,9 @@
 package math
 
 import (
-	"github.com/TheAlgorithms/Go/search"
 	"testing"
+
+	"github.com/deeper-x/data_struct_algs/search"
 )
 
 func TestFindKthMax(t *testing.T) {

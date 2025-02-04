@@ -9,10 +9,10 @@ import "fmt"
 // with this easily.
 // For example, we can use gotools `go get` command to get
 // this repository cloned inside the
-// $GOPATH/src/github.com/TheAlgorithms/Go (you can do this
+// $GOPATH/src/github.com/deeper-x/data_struct_algs/ (you can do this
 // manually as well) and use the import statement as follows:
 //
-// `import "github.com/TheAlgorithms/Go/structure/linkedlist"`
+// `import "github.com/deeper-x/data_struct_algs/structure/linkedlist"`
 //
 // and call linkedlist.Doubly to create a new doubly linked list.
 type Doubly[T any] struct {
@@ -104,7 +104,6 @@ func (ll *Doubly[T]) DelAtEnd() (T, bool) {
 // DelByPos deletes node at middle based on position in list
 // and returns value. If empty or position of node is less than linked list length, returns false
 func (ll *Doubly[T]) DelByPos(pos int) (T, bool) {
-
 	switch {
 	case ll.Head == nil:
 		var r T

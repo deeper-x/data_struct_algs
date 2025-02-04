@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/TheAlgorithms/Go/math/matrix"
+	"github.com/deeper-x/data_struct_algs/math/matrix"
 )
 
 func TestAdd(t *testing.T) {
@@ -33,7 +33,6 @@ func TestAdd(t *testing.T) {
 	if err2 == nil || err2.Error() != expectedError2.Error() {
 		t.Errorf("Add(m3, m4) returned error: %v, expected error: %v", err2, expectedError2)
 	}
-
 }
 
 func BenchmarkAddSmallMatrix(b *testing.B) {
