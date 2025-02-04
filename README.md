@@ -3,6 +3,12 @@
 A comprehensive collection of algorithms and data structures implemented in Go (Golang). This repository serves as both a learning resource and a reference implementation for common computer science concepts.
 [![Go](https://github.com/deeper-x/data_struct_algs/actions/workflows/go.yml/badge.svg)](https://github.com/deeper-x/data_struct_algs/actions/workflows/go.yml)
 
+### Run
+```golang
+go test -v ./...
+```
+
+
 ## Contents
 
 ### Data Structures
