@@ -195,5 +195,8 @@ go test ./search/...
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Acknowledgements
+This project was inspired by #TODO
+
 ## Contact
 For questions and feedback, please open an issue in the GitHub repository.
