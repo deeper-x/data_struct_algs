@@ -1,3 +1,3 @@
 module github.com/deeper-x/data_struct_algs
 
-go 1.23.3
+go 1.23
